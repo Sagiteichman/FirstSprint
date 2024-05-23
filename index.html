@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body onload="onInit()">
+  <div class="level-buttons">
+    <span classname="level">Choose Your Level :</span>
+    <button onclick="setLevel(LEVELS.BEGINNER)">Easy</button>
+    <button onclick="setLevel(LEVELS.MEDIUM)">Medium</button>
+    <button onclick="setLevel(LEVELS.EXPERT)">Hard</button>
+  </div>
+  <div class="lives"> ${liveCounter} Lives Left </div>
+  <div class ="victory">CHAMPION!</div>
+  <div class="grid"></div>
+  <div class="restart">
+    <button classname ="button-restart" onclick="restartGame()">
+      <span class="restart-Btn">😃</span> <!-- Normal -->
+    </button>
+  </div> 
+  <footer>
+    <p>Created by Sagi Teichman</p>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
