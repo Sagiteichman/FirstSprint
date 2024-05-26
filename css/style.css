@@ -4,16 +4,20 @@
   border: 5px solid rgb(0, 0, 0);
   font-size: 20px;
   cursor: pointer;
+}
 
+.cell-revealed {
+  background-color: rgba(211, 211, 211);
+  cursor: pointer
+}
+
+.marked {
+  background-color: rgba(128, 128, 128, )
 }
 
 button{
   font-size: 30px;
   border-radius: 15px;
-}
-.cell-revealed {
-  background-color: rgba(211, 211, 211);
-  cursor: pointer
 }
 
 .grid {
@@ -27,7 +31,7 @@ button{
 
 table {
   margin: 0 auto;
-  width: 50%;
+  /* width: 50%; */
   text-align: center;
   border-collapse: collapse;
 }
@@ -45,6 +49,7 @@ td {
 }
 
 .level-buttons {
+  color: white;
   font-size: 50px;
   text-align: center;
   padding: 20px 0;
@@ -67,15 +72,6 @@ div.restart button {
   background-color: rgb(255, 51, 51)
 }
 
-.marked {
-
-  background-color: rgba(128, 128, 128, )
-}
-
-.level-buttons {
-  color: white;
-}
-
 body {
   background-image: url('/img/ChampionLeague.jpg');
   background-size: cover;
@@ -85,17 +81,16 @@ body {
 }
 
 .lives {
-  opacity: 0;
+  opacity: 1;
   font-size: 30px;
   text-align: center;
   border: dashed;
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 0, 0, 0.7);
   width: 50%;
   margin: 0 auto;
   margin-top: 30px;
   display: block;
 }
-
 
 p{
   color: white;
